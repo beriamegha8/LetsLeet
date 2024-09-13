@@ -1,0 +1,11 @@
+class Solution {
+    public int[] countBits(int n) {
+        int[] ans = new int[n + 1];
+        for (int i = 1; i <= n; i++) {
+            //ans[i] is the number of 1's in binary representation of i
+            //computing the nummber of bits using the DP approach
+            ans[i] = ans[i & (i - 1)] + 1;
+        }
+        return ans;
+    }
+}
