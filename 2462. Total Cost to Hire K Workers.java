@@ -43,7 +43,6 @@ class Solution {
                 }
             }
         }
-        
         return totalCost;
     }
 }
